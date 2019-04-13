@@ -1,0 +1,17 @@
+
+mixin advantages_block(advantages_content__title, advantages_content__commit, file, alt_icon)
+		.advantages_content
+			.advantages_image-box
+				img(class= 'advantages_icon', src='img/'+file, alt= alt_icon)
+			.advantages_title
+				h3.h3= advantages_content__title
+			p(class= 'advantages_commit')= advantages_content__commit
+
+mixin advantages
+	.advantages.layout
+		.advantages_container
+			+advantages_block('GET INSPIRED', 'Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat.', 'burger.svg', 'burger')
+			+advantages_block('GET REWARDED', 'Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat.', 'money.svg', 'money')
+			+advantages_block('GET SOCIAL', 'Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat.', 'cock.svg', 'cock')
+
+	

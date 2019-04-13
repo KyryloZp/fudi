@@ -1,0 +1,7 @@
+include ../recipe/recipe.pug
+
+mixin cuisines
+    section.cuisines.layout
+        .cuisines_container
+            each smth in array
+              +recipe(smth)

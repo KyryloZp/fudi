@@ -1,0 +1,21 @@
+input[type="radio"]{
+	display: none;
+}
+
+label{
+    width: 20px;
+    height: 20px;
+}
+label.checkbox_input{
+	width: 10px;
+    height: 10px;
+    opacity: 0.2;
+    background-color: white;
+    border: none;
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+}
+input[type="radio"]:checked+label{
+    opacity: 1;
+}

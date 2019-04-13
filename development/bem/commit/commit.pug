@@ -1,0 +1,15 @@
+include ../avatar/avatar.pug
+include ../radioinput/radioinput.pug
+
+mixin commit()
+	section.commit
+		.commit_container
+			+avatar('photo_profile')
+			p.commit_text.
+				“I am so happy because I found this recipe, and it just made my life easier.
+				Thanks  so much for sharing!”
+			p.commit_autor.
+				- Michael Dawson, San Francisco, CA -
+			+checkbox('3')
+
+

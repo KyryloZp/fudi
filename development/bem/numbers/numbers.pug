@@ -1,0 +1,13 @@
+mixin numbers_block(numbers_content__title, numbers_content__commit)
+		.numbers_content
+			h2.h2= numbers_content__title
+			p(class= 'numbers_commit')= numbers_content__commit
+
+mixin numbers
+	.numbers.layout
+		.numbers_container
+			+numbers_block('23,567', 'Recipes Available')
+			+numbers_block('431,729', 'Active Users')
+			+numbers_block('892,173', 'Positive Reviews ')
+			+numbers_block('56,581', 'Photos & Videos ')
+			+numbers_block('3,182', 'Spices and Herbs  ')

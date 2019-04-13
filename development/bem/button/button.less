@@ -1,0 +1,38 @@
+@import url(../_variable.less);
+.button {
+	color: white;
+	font-family: "Myriad Pro";
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 21px;
+	border: 3px solid;
+	border-radius: 3px;
+	background: transparent;
+	padding: 20px 80px;
+    cursor: pointer;
+    letter-spacing: .05px;
+    &:hover {
+        color: @light-red;
+    }
+}
+
+.button_shop__apple,
+.button_shop__google {
+    width: 120px;
+    height: 39px;
+    background-image: url(img/google_button.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 120px 39px;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover {
+        background-image: url(img/google_button__hover.png);
+    }
+}
+.button_shop__apple {
+    background-image: url(img/apple_button.png);
+    &:hover {
+        background-image: url(img/apple_button__hover.png);
+    }  
+}

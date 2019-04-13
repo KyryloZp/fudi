@@ -1,0 +1,62 @@
+@import url(../button/button.less);
+@import url(../_variable.less);
+
+.introducing {
+    background: #f7f7f7;
+    position: relative;
+    overflow: hidden;
+    &_container {
+        width: 1180px;
+        margin: 0 auto;
+        background: url(img/iPhone-5s.png);
+        background-repeat: no-repeat;
+        min-height: 705px;
+        background-position: 0 55px;
+        background-size: 523px,779px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        &:before {
+            content: '';
+            background: url(img/Nav-bar-Green.jpg);
+            background-repeat: no-repeat;
+            position: relative;
+            width: 442px;
+            height: 795px;
+            background-position: center;
+            left: -11px;
+            top: 139px;
+            background-size: 421px 658px;
+        }
+    }
+    &_content {
+        width: 540px;
+        float: right;
+        text-align: left;
+        color: black;
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 18px;
+        letter-spacing: .05px;
+        margin: 175px 0 0;
+    }
+    &_title {
+        position: relative;
+        &:after {
+            content: '';
+            position: absolute;
+            top: 30px;
+            left: 0;
+            background: #f57365;
+            width: 88px;
+            height: 1px;
+        }
+    }
+    &_text-box {
+        margin: 20px 0;
+    }
+    &_text__middle {
+        margin: 35px 0;
+    }
+}

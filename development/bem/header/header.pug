@@ -1,0 +1,17 @@
+include ../nav/nav.pug
+include ../button/button.pug
+
+mixin header()
+    .header.layout
+            .header_container
+                .header_nav.layout
+                    +nav('LOG IN', 'SIGN UP')
+                .header_content
+                    p.header_title Find your Favorite
+                    h1.h1 RECIPES
+                    .header_button
+                        +button('GET STARTED', 'button')
+                    p.header_button-descr
+                        |OR SEND US YOUR OWN RECIPES AND 
+                        span.header_button-descr__underline GET REWARDED
+                        | !

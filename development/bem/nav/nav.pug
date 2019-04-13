@@ -1,0 +1,11 @@
+include ../logo/logo.pug
+
+mixin nav(...text_links)
+    nav.nav
+        .nav_logo
+            +logo()
+        .nav_menu
+            each item in text_links
+                a(class='nav_links', href='#')= item
+            a(class="nav_bar")
+                img(src="img/nav_bar.png", alt="nav-bar")
